@@ -1,0 +1,28 @@
+{
+  "name": "@kukuruznik/prettier",
+  "description": "Prettier configs",
+  "author": "Kukuruznik",
+  "license": "MIT",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write \"*.js\""
+  },
+  "keywords": [
+    "prettier"
+  ],
+
+  "files": [
+    ".prettierrc.js"
+  ],
+  "main": "index.js",
+  "lint-staged": {
+    "*.js": "prettier --write"
+  },
+  "dependencies": {
+    "prettier": "^3.3.3"
+  },
+  "peerDependencies": {
+    "prettier": "^3.3.3"
+  },
+}
