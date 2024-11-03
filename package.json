@@ -3,7 +3,7 @@
   "description": "Prettier configs",
   "author": "Kukuruznik",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "scripts": {
     "format": "prettier --write \"*.js\""
@@ -11,11 +11,12 @@
   "keywords": [
     "prettier"
   ],
-
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     ".prettierrc.js"
   ],
-  "main": "index.js",
   "lint-staged": {
     "*.js": "prettier --write"
   },
@@ -24,5 +25,5 @@
   },
   "peerDependencies": {
     "prettier": "^3.3.3"
-  },
+  }
 }
